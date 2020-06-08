@@ -1,0 +1,5 @@
+#!/bin/sh
+
+find -type f \( -name "*~" -o -name "#*#" -o  -name "*.o" \) -delete
+
+echo -e "\033[3;5;32m All '~' and '#' are deleted\033[0m\n\n"

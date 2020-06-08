@@ -1,0 +1,12 @@
+#!/bin/sh
+
+find -type f \( -name "*~" -o -name "#*#" -o  -name "*.o" \) -delete
+
+echo -e "<---------- Cleaning ---------->\n\n\033[3mPush that\033[0m\n\n"
+
+git add --all
+git commit -m "$1"
+git push origin master
+
+echo -e "\n\n<---------- ls-files ---------->\n\n\033[3mPush that\033[0m\n\n"
+git ls-files

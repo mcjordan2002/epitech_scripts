@@ -1,0 +1,16 @@
+#!/bin/sh
+
+#THIS METHOD IS SIMPLE BUT I DON'T RECOMMEND IT
+MDP="your passwork epitech"
+_MDP="`echo -n "$MDP" | sha512sum | cut -f1 -d' '`"
+
+LOGIN="your login epitech. ex: jordan.vitou"
+
+sleep 1
+echo -e "\033[1;5;49m------BLIH REPOSITORY CREATION------\n\n\033[0m"
+blih -u $LOGIN.vitou@epitech.eu -t $_MDP repository create $1
+echo -e "\033[1;5;49m------CREATION OF $1------\n\n\033[0m"
+blih -u $LOGIN.vitou@epitech.eu -t $_MDP repository setacl $1 ramassage-tek r
+echo -e "\033[1;5;49m------RIGHTS------\n\n\033[0m"
+blih -u $LOGIN.vitou@epitech.eu -t $_MDP repository getacl $1
+echo -e "\033[1;5;49m------RIGHTS VERIFICATION------\n\n\033[0m"
