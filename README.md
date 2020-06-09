@@ -8,6 +8,7 @@ My scripts for epitech
 
 -push (push_that
 ```Usage: ./push (commit message)```
+
           ```ex: ./push bug_fixing```
           )
 
@@ -17,10 +18,12 @@ My scripts for epitech
 
 -create_repo (
 ```Usage: ./create_repo (repo_name)```
+
           ```ex: ./create_repo PSU_malloc_2019```
 )
 
 -iclone (clone repo
 ```Usage: ./iclone (login_epitech) (repo_name)```
+
           ```ex: ./iclone jordan.vitou MUL_my_rpg_2018```
 )
